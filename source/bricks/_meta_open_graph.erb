@@ -1,0 +1,38 @@
+<% current_page.data.og_images.each do |image| %>
+  <meta property="og:image"             content="<%= image %>">
+<% end %>
+<meta property="og:site_name"           content="<%= config.company_name %>">
+<meta property="og:title"               content="<%= current_page.data.title %>">
+<meta property="og:description"         content="<%= current_page.data.description %>">
+<meta property="og:type"                content="<%= current_page.data.og_content_type %>">
+<meta property="og:url"                 content="<%= current_page.url %>">
+<meta property="og:locale"              content="<%= full_locale %>">
+<% config.locales.each do |locale| unless config.root_locale == locale %>
+  <meta property="og:locale:alternate"  content="<%= full_locale(locale) %>">
+<% end end %>
+<meta property="og:latitude"            content="<%= config.company_lat %>">
+<meta property="og:longitude"           content="<%= config.company_long %>">
+<meta property="og:street-address"      content="<%= config.company_address %>, <%= config.company_placename %>">
+<meta property="og:locality"            content="<%= config.company_placename %>">
+<meta property="og:region"              content="<%= config.meta_geo_region %>">
+<meta property="og:postal-code"         content="<%= config.company_postal_code %>">
+<meta property="og:country-name"        content="<%= config.company_country %>">
+<meta property="og:email"               content="<%= config.company_email %>">
+<meta property="og:phone_number"        content="<%= config.company_phone_number %>">
+
+<meta property="fb:app_id"              content="<%= config.sm_fb_app_id %>">
+
+<meta name="twitter:card"               content="<%= current_page.data.abstract %>">
+<meta name="twitter:site"               content="<%= config.sm_twitter_site_account %>">
+<meta name="twitter:creator"            content="<%= config.sm_twitter_user_account %>">
+<meta name="twitter:url"                content="<%= current_page.url %>">
+<meta name="twitter:title"              content="<%= current_page.data.title %>">
+<meta name="twitter:description"        content="<%= current_page.data.description %>">
+<% current_page.data.og_images.each do |image| %>
+  <meta property="twitter:image"        content="<%= image %>">
+<% end %>
+<%
+  # TODO: conditionally show things if data is provided
+  # and find a solution for the images
+  # and make sure the links here are relative
+%>
