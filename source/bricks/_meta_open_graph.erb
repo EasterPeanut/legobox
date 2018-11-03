@@ -6,7 +6,7 @@
 <meta property="og:description"         content="<%= current_page.data.description %>">
 <meta property="og:type"                content="<%= current_page.data.og_content_type %>">
 <meta property="og:url"                 content="<%= current_page.url %>">
-<meta property="og:locale"              content="<%= full_locale %>">
+<meta property="og:locale"              content="<%= full_locale() %>">
 <% config.locales.each do |locale| unless config.root_locale == locale %>
   <meta property="og:locale:alternate"  content="<%= full_locale(locale) %>">
 <% end end %>
@@ -34,5 +34,6 @@
 <%
   # TODO: conditionally show things if data is provided
   # and find a solution for the images
-  # and make sure the links here are relative
+  # and make sure the links here are absolute
+  # do something with video / audio, if conditionally possible
 %>

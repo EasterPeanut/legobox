@@ -10,9 +10,11 @@
     <%= partial "bricks/meta_geo_position" %>
     <meta name="description" content="<%= current_page.data.description %>">
     <meta name="abstract" content="<%= current_page.data.abstract %>">
+    <meta name="robots" content="<%= robots() %>">
     <%= partial "bricks/meta_open_graph" %>
+    <%= partial "bricks/meta_favicon" %>
+
     <% # TODO:
-       # robots
        # app icons
        # javascript at the end to prevent render blocking
        # theme color (android stuff)
@@ -22,7 +24,9 @@
        # dns-prefetch / preload / preconnect?
        # canonical
        # cookies?
-       # alternate links %>
+       # alternate links
+
+       # https://gist.github.com/nunosans/3028849 %>
 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>

@@ -1,5 +1,6 @@
 # Global settings
 
+config[:color_primary] = "#e480b0"
 config[:company_address] = "Gouwe 102"
 config[:company_country] = "Nederland"
 config[:company_email] = "info@legobox.io"
@@ -19,6 +20,7 @@ config[:locales] = [:nl, :en]
 config[:sm_fb_app_id] = "123456789"
 config[:sm_twitter_site_account] = "@legobox"
 config[:sm_twitter_user_account] = "@legoman"
+config[:staging] = true
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -28,7 +30,7 @@ activate :autoprefixer do |prefix|
 end
 activate :directory_indexes
 activate :livereload
-activate :i18n, mount_at_root: config[:root_locale], :langs => config[:locales]
+activate :i18n, mount_at_root: config.root_locale, :langs => config.locales
 # activate :search
 
 # Layouts
@@ -58,6 +60,12 @@ page "/*.txt", layout: false
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
+  def robots(page = current_page)
+    return "noindex,nofollow" if config.staging
+    return page.data.robots if page.data.robots
+    "noydir,noodp,index,follow"
+  end
+
   # Get full locale (eg. nl_NL)
   def full_locale(lang = I18n.locale)
     case lang
