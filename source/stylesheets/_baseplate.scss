@@ -1,0 +1,17 @@
+@import "_variables";
+
+body {
+  background-color: $color-primary;
+  padding: 18vh 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: $color-selection;
+}

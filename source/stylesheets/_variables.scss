@@ -1,0 +1,13 @@
+// ---- Fonts -----------------------------------
+$font-family: "PT Serif", -apple-system, BlinkMacSystemFont, system-ui, "Bitstream Charter", "Sylfaen", "Times", "Times New Roman", "Century Schoolbook L", "URW Palladio L", "URW Bookman L", "Georgia", serif;
+$font-family-heading: "Roboto Condensed", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+$font-size: 16px;
+
+// ---- Colors ----------------------------------
+$color-primary: #5888e5;
+$color-secondary: #e480b0;
+$color-tertiary: #f9db01;
+$color-font: #272727;
+$color-link: $color-secondary;
+$color-link-hover: darken($color-link, 10%);
+$color-selection: transparentize($color-tertiary, 0.2);

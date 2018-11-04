@@ -18,7 +18,7 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <img src="/images/legobox-logo.svg" alt="<%= config.company_name %> logo" width="250px">
+    <%= image_tag 'legobox-logo.svg', :width => '250', :alt => config.company_name %>
     <%= yield %>
   </body>
 </html>

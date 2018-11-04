@@ -1,6 +1,7 @@
 # Global settings
 
-config[:color_primary] = "#e480b0"
+config[:color_primary] = "#5888e5"
+config[:color_secondary] = "#e480b0"
 config[:company_address] = "Gouwe 102"
 config[:company_country] = "Nederland"
 config[:company_email] = "info@legobox.io"
