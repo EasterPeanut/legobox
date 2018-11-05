@@ -18,7 +18,7 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= image_tag 'legobox-logo.svg', :width => '250', :alt => config.company_name %>
+    <%= partial "bricks/header/header" %>
     <%= yield %>
   </body>
 </html>

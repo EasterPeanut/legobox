@@ -11,3 +11,7 @@ $color-font: #272727;
 $color-link: $color-secondary;
 $color-link-hover: darken($color-link, 10%);
 $color-selection: transparentize($color-tertiary, 0.2);
+$color-white: #fff;
+
+// ---- Grid ------------------------------------
+$grid-gap: 0.75rem;

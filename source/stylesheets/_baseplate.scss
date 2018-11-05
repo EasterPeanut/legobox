@@ -1,9 +1,7 @@
 @import "_variables";
 
 body {
-  background-color: $color-primary;
-  padding: 18vh 1rem;
-  text-align: center;
+  background-color: $color-white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,4 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 
 ::selection {
   background: $color-selection;
+}
+
+.row {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
 }
