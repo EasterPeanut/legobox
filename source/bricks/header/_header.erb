@@ -1,12 +1,17 @@
-<header class="container">
-  <% link_to "/", :class => "logo" do %>
-    <%= image_tag "legobox-logo.svg", :width => "250", :alt => config.company_name %>
-    <p>Legobox</p>
-  <% end %>
-  <nav>
+<header>
+  <nav class="container">
+    <% link_to "/", :class => "logo" do %>
+      <%= image_tag "legobox-logo.svg", :alt => config.company_name %>
+      <div class="company-name">Legobox</div>
+    <% end %>
     <ul>
-      <li>hoi</li>
-      <li>hoi</li>
+      <li><%= link_to "Products", "/products" %></li>
+      <li><%= link_to "Cases", "/cases" %></li>
+      <li><%= link_to "Team", "/team" %></li>
+      <li><%= link_to "About", "/about" %></li>
+      <li><%= link_to "News", "/news" %></li>
+      <li><%= link_to "Blog", "/blog" %></li>
+      <li><%= link_to "Contact", "/contact" %></li>
     </ul>
   </nav>
 </header>

@@ -1,12 +1,49 @@
 header {
   background: $color-primary;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: auto auto;
-  grid-gap: $grid-gap;
-}
 
-.logo {
-  color: $color-white;
-  text-decoration: none;
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+  }
+
+  .logo {
+    align-items: center;
+    color: $color-white;
+    column-gap: $grid-gap;
+    display: grid;
+    font-family: $font-family-heading;
+    font-weight: 700;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding: $spacing-small;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background-color: $color-black-transparent;
+      color: $color-white;
+    }
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+
+    li a {
+      color: $color-white;
+      display: block;
+      font-family: $font-family-heading;
+      padding: $spacing-small;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: $color-black-transparent;
+        color: $color-white;
+      }
+    }
+  }
 }
