@@ -3,7 +3,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 

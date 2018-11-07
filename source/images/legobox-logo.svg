@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Legobox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 300 245" style="enable-background:new 0 0 300 245;" xml:space="preserve" aria-labelledby="legobox-logo" role="img">
+<svg version="1.1" id="LegoboxLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 300 245" style="enable-background:new 0 0 300 245;" xml:space="preserve" aria-label="Legobox Logo" role="img">
   <style type="text/css">.st0{fill:#E480B0;} .st1{fill:#EFA2BF;} .st2{fill:#BC6191;} .st3{fill:#C96F9E;}</style>
   <polygon class="st0" points="0,184.4 178.4,244.6 178.4,115.3 0,65.1 "/>
   <polygon class="st1" points="129.3,11.5 300,52.8 178.4,115.3 0,65.1 "/>

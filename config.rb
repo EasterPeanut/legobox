@@ -7,14 +7,14 @@ config[:company_country] = "Nederland"
 config[:company_email] = "info@legobox.io"
 config[:company_lat] = "53.000986"
 config[:company_long] = "6.538577"
+config[:company_name] = "Legobox"
 config[:company_phone_number] = "+31 65 777 5633"
 config[:company_placename] = "Assen"
 config[:company_postal_code] = "9406 GS"
-config[:company_name] = "Legobox"
 config[:host] = "localhost"
 config[:meta_csp_settings] = " img-src 'self' https://*; child-src 'none';"
-config[:meta_geo_position] = config[:company_lat] + ";" + config[:company_long]
 config[:meta_geo_placename] = config[:company_placename] + ", " + config[:company_country]
+config[:meta_geo_position] = config[:company_lat] + ";" + config[:company_long]
 config[:meta_geo_region] = "NL-DR"
 config[:root_locale] = :nl
 config[:locales] = [:nl, :en]
@@ -30,8 +30,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 activate :directory_indexes
-activate :livereload
 activate :i18n, mount_at_root: config.root_locale, :langs => config.locales
+activate :livereload
+activate :sprockets
 # activate :search
 
 # Layouts

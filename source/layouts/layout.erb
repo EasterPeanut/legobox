@@ -15,10 +15,10 @@
     <%= partial "bricks/meta_favicon" %>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Roboto+Condensed:700" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
   </head>
   <body>
     <%= partial "bricks/header/header" %>
     <%= yield %>
   </body>
+  <%= javascript_include_tag "site" %>
 </html>
