@@ -1,11 +1,14 @@
 header {
   background: $color-primary;
 
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto auto;
+  @include for-tablet-portrait-up {
+    nav {
+      display: grid;
+      grid-template-columns: 10rem auto;
+      grid-template-rows: auto auto;
+    }
   }
+
 
   .logo {
     align-items: center;
@@ -14,7 +17,7 @@ header {
     display: grid;
     font-family: $font-family-heading;
     font-weight: 700;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 3rem auto;
     grid-template-rows: auto auto;
     padding: $spacing-small;
     text-decoration: none;
@@ -28,9 +31,12 @@ header {
   }
 
   ul {
-    align-items: center;
-    display: flex;
-    margin-left: auto;
+    @include for-tablet-portrait-up {
+      align-items: center;
+      display: flex;
+      margin-left: auto;
+    }
+
 
     li a {
       color: $color-white;

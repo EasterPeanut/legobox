@@ -20,5 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+
+  @include for-tablet-landscape-up {
+    max-width: 900px;
+  }
+
+
+  @include for-desktop-up {
+    max-width: 960px;
+  }
 }

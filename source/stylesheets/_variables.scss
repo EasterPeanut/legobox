@@ -18,3 +18,58 @@ $color-selection: transparentize($color-tertiary, 0.2);
 // ---- Grid ------------------------------------
 $grid-gap: 0.75rem;
 $spacing-small: 0.75rem;
+
+// ---- Breakpoints -----------------------------
+@mixin for-phone-only {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape-only {
+  @media (max-width: 600px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-only {
+  @media (min-width: 601px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 601px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-large-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
