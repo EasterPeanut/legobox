@@ -2,9 +2,12 @@
   <nav class="container">
     <% link_to "/", :class => "logo" do %>
       <%= image_tag "legobox-logo.svg", :alt => config.company_name %>
-      <div class="company-name">Legobox</div>
+      <div class="company-name"><%= config.company_name %></div>
     <% end %>
-    <ul>
+    <button id="navToggleButton">
+      <div class="bar"></div>
+    </button>
+    <ul id="navList" class="expanded">
       <li><%= link_to "Products", "/products" %></li>
       <li><%= link_to "Cases", "/cases" %></li>
       <li><%= link_to "Team", "/team" %></li>
@@ -14,7 +17,4 @@
       <li><%= link_to "Contact", "/contact" %></li>
     </ul>
   </nav>
-  <button id="navToggleButton">
-    <div class="bar"></div>
-  </button>
 </header>

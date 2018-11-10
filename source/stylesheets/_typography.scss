@@ -17,6 +17,7 @@ h1, h2, h3 {
 
 a {
   color: $color-link;
+  transition: color .075s ease, background-color .1s ease;
 
   &:focus,
   &:hover {

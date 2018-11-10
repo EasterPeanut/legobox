@@ -18,6 +18,7 @@ header {
       font-weight: 700;
       grid-template-columns: 3rem auto;
       grid-template-rows: auto auto;
+      margin-right: 4rem;
       padding: $spacing-small;
       text-decoration: none;
       text-transform: uppercase;
@@ -53,33 +54,59 @@ header {
     }
   }
 
+  #navList {
+    &.collapsed {
+      height: 0;
+      overflow: hidden;
+
+      @include for-tablet-portrait-up {
+        height: auto;
+      }
+    }
+
+    &.expanded {
+      height: auto;
+    }
+  }
+
   #navToggleButton {
     background: none;
     border-color: transparent;
-    border-width: .75rem .25rem;
+    border-width: 1.4375rem 1rem;
     cursor: pointer;
-    height: 3rem;
+    height: 4rem;
     padding: 0;
-    position: relative;
-    width: 3rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 4rem;
+
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+
 
     &:hover,
     &:focus {
       background-color: $color-black-transparent;
-      border-color: $color-black-transparent;
     }
 
     &.active {
       .bar {
-        top: .625rem;
+        left: 5%;
+        top: .5rem;
+        transform: rotate(225deg);
+        width: 90%;
       }
 
       .bar::before {
         top: 0;
+        transform: rotate(90deg);
       }
 
       .bar::after {
         top: 0;
+        transform: rotate(90deg);
       }
     }
 
@@ -87,9 +114,10 @@ header {
     .bar::before,
     .bar::after {
       background-color: $color-white;
-      height: .25rem;
+      height: .125rem;
       left: 0;
       position: absolute;
+      transition: top .18s ease, transform .22s ease;
       width: 100%;
     }
 
@@ -103,11 +131,11 @@ header {
       }
 
       &::before {
-        top: .625rem;
+        top: .5rem;
       }
 
       &:after {
-        top: 1.25rem;
+        top: 1rem;
       }
     }
   }
