@@ -1,14 +1,21 @@
 // ---- Fonts -----------------------------------
 $font-family: "PT Serif", -apple-system, BlinkMacSystemFont, system-ui, "Bitstream Charter", "Sylfaen", "Times", "Times New Roman", "Century Schoolbook L", "URW Palladio L", "URW Bookman L", "Georgia", serif;
 $font-family-heading: "Roboto Condensed", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+$font-family-ui: $font-family-heading;
 $font-size: 16px;
 
+// ---- Borders ---------------------------------
+$border-radius: 2px;
+$border-width-thick: 2px;
+$border-width-thin: 1px;
+
 // ---- Colors ----------------------------------
-$color-black-transparent: transparentize(#000, 0.95);
 $color-white: #fff;
 
 $color-primary: #5888e5;
+$color-primary-hover: darken($color-primary, 5%);
 $color-secondary: #e480b0;
+$color-secondary-hover: darken($color-secondary, 5%);
 $color-tertiary: #f9db01;
 $color-font: #272727;
 $color-link: $color-secondary;

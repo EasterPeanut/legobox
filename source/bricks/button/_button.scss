@@ -1,0 +1,70 @@
+.button {
+  border-radius: $border-radius;
+  border-style: solid;
+  border-width: $border-width-thin;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .375rem 1rem;
+
+  &.large {
+    border-width: $border-width-thick;
+    font-size: 1.25rem;
+    padding: .46875rem 1.25rem;
+  }
+
+  &.default,
+  &.primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-primary-hover;
+      border-color: $color-primary-hover;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-secondary-hover;
+      border-color: $color-secondary-hover;
+    }
+  }
+
+  &.primary.ghost {
+    background-color: transparent;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &.secondary.ghost {
+    background-color: transparent;
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-secondary;
+      border-color: $color-secondary;
+    }
+  }
+
+  &.white.ghost {
+    background-color: transparent;
+    color: $color-white;
+
+    &:hover {
+      color: $color-font;
+      background-color: $color-white;
+      border-color: $color-white;
+    }
+  }
+}

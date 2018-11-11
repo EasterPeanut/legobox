@@ -24,3 +24,9 @@ a {
     color: $color-link-hover;
   }
 }
+
+button,
+.button {
+  font-family: $font-family-ui;
+  text-decoration: none;
+}

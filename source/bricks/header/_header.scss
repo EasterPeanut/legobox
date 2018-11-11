@@ -39,6 +39,7 @@ header {
 
 
       li a {
+        border-radius: $border-radius;
         color: $color-white;
         display: block;
         font-family: $font-family-heading;
