@@ -21,6 +21,34 @@
     top: 0;
   }
 
+  .layer {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &.primary {
+      background-color: $color-primary-transparent;
+    }
+
+    &.secondary {
+      background-color: $color-secondary-transparent;
+    }
+
+    &.tertiary {
+      background-color: $color-tertiary-transparent;
+    }
+
+    &.black {
+      background-color: $color-black-transparent;
+    }
+
+    &.white {
+      background-color: $color-white-transparent;
+    }
+  }
+
   .container {
     max-width: 24rem;
     position: relative;
