@@ -2,6 +2,8 @@ header {
   background: $color-primary;
 
   nav {
+    padding: 0;
+
     @include for-tablet-portrait-up {
       display: grid;
       grid-template-columns: 10rem auto;
@@ -23,9 +25,14 @@ header {
       text-decoration: none;
       text-transform: uppercase;
 
+      @include for-tablet-portrait-up {
+        margin-right: 0;
+      }
+
+
       &:hover,
       &:focus {
-        background-color: $color-black-transparent;
+        background-color: $color-primary-hover;
         color: $color-white;
       }
     }
@@ -48,7 +55,7 @@ header {
 
         &:hover,
         &:focus {
-          background-color: $color-black-transparent;
+          background-color: $color-primary-hover;
           color: $color-white;
         }
       }
@@ -62,6 +69,7 @@ header {
 
       @include for-tablet-portrait-up {
         height: auto;
+        overflow: initial;
       }
     }
 
@@ -89,7 +97,7 @@ header {
 
     &:hover,
     &:focus {
-      background-color: $color-black-transparent;
+      background-color: $color-primary-hover;
     }
 
     &.active {

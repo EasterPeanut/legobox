@@ -1,0 +1,44 @@
+.hero {
+  height: 18rem;
+  position: relative;
+  text-align: center;
+
+  @include for-tablet-portrait-up {
+    height: 30rem;
+  }
+
+
+  @include for-large-desktop-up {
+    height: 40rem;
+  }
+
+
+  img {
+    height: inherit;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  .container {
+    max-width: 24rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .title,
+  .text {
+    color: $color-white;
+    position: relative;
+  }
+
+  .title {
+    margin-bottom: .75rem;
+  }
+
+  .text {
+    margin-bottom: 2rem;
+  }
+}
