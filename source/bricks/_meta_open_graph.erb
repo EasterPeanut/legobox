@@ -1,11 +1,11 @@
 <% current_page.data.og_images.each do |image| %>
-  <meta property="og:image"             content="<%= image %>">
+  <meta property="og:image"             content="<%= image_url(image) %>">
 <% end %>
 <meta property="og:site_name"           content="<%= config.company_name %>">
 <meta property="og:title"               content="<%= current_page.data.title %>">
 <meta property="og:description"         content="<%= current_page.data.description %>">
 <meta property="og:type"                content="<%= current_page.data.og_content_type %>">
-<meta property="og:url"                 content="<%= current_page.url %>">
+<meta property="og:url"                 content="<%= full_url(current_page.url) %>">
 <meta property="og:locale"              content="<%= full_locale() %>">
 <% config.locales.each do |locale| unless config.root_locale == locale %>
   <meta property="og:locale:alternate"  content="<%= full_locale(locale) %>">
@@ -25,15 +25,14 @@
 <meta name="twitter:card"               content="<%= current_page.data.abstract %>">
 <meta name="twitter:site"               content="<%= config.sm_twitter_site_account %>">
 <meta name="twitter:creator"            content="<%= config.sm_twitter_user_account %>">
-<meta name="twitter:url"                content="<%= current_page.url %>">
+<meta name="twitter:url"                content="<%= full_url(current_page.url) %>">
 <meta name="twitter:title"              content="<%= current_page.data.title %>">
 <meta name="twitter:description"        content="<%= current_page.data.description %>">
 <% current_page.data.og_images.each do |image| %>
-  <meta property="twitter:image"        content="<%= image %>">
+  <meta property="twitter:image"        content="<%= image_url(image) %>">
 <% end %>
 <%
   # TODO: conditionally show things if data is provided
   # and find a solution for the images
-  # and make sure the links here are absolute
   # do something with video / audio, if conditionally possible
 %>

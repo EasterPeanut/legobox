@@ -11,7 +11,6 @@ config[:company_name] = "Legobox"
 config[:company_phone_number] = "+31 65 777 5633"
 config[:company_placename] = "Assen"
 config[:company_postal_code] = "9406 GS"
-config[:host] = "localhost"
 config[:meta_csp_settings] = " img-src 'self' https://*; child-src 'none';"
 config[:meta_geo_placename] = config[:company_placename] + ", " + config[:company_country]
 config[:meta_geo_position] = config[:company_lat] + ";" + config[:company_long]
@@ -77,13 +76,40 @@ helpers do
         "#{lang.downcase}_#{lang.upcase}"
     end
   end
+
+  # Get host with port
+  def host_with_port
+    [config.host, optional_port].compact.join(':')
+  end
+
+  def optional_port
+    config.port unless config.port.to_i == 80
+  end
+
+  def image_url(source)
+    config.protocol + host_with_port + image_path(source)
+  end
+
+  def full_url(url)
+    config.protocol + host_with_port + url
+  end
 end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
+configure :development do
+  # Used for generating absolute URLs
+  config[:protocol] = "http://"
+  config[:host] = "localhost/"
+  config[:port] = 4567
+end
+
 configure :build do
-  config[:host] = "https://www.legobox.io"
+  # Used for generating absolute URLs
+  config[:protocol] = "https://"
+  config[:host] = "legobox.io"
+  config[:port] = 80
 
   activate :minify_css
   activate :minify_html
