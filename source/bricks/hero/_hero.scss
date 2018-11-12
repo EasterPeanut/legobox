@@ -1,17 +1,51 @@
 .hero {
-  height: 18rem;
   position: relative;
   text-align: center;
 
-  @include for-tablet-portrait-up {
-    height: 30rem;
+  &.full {
+    height: 24rem;
+
+    @include for-tablet-portrait-up {
+      height: 30rem;
+    }
+
+
+    @include for-large-desktop-up {
+      height: 40rem;
+    }
   }
 
+  &.narrow {
+    height: 18rem;
+    margin: 0 auto;
 
-  @include for-large-desktop-up {
-    height: 40rem;
+    @include for-tablet-landscape-up {
+      height: 22.5rem;
+      max-width: $max-width-tablet-landscape-up;
+    }
+
+
+    @include for-desktop-up {
+      height: 30rem;
+      max-width: $max-width-desktop-up;
+    }
   }
 
+  &.wide {
+    height: 18rem;
+    margin: 0 auto;
+
+    @include for-tablet-landscape-up {
+      height: 22.5rem;
+      max-width: $max-width-desktop-up;
+    }
+
+
+    @include for-desktop-up {
+      height: 30rem;
+      max-width: $max-width-desktop-up + 216px;
+    }
+  }
 
   img {
     height: inherit;
@@ -21,7 +55,7 @@
     top: 0;
   }
 
-  .layer {
+  .overlay {
     height: 100%;
     left: 0;
     position: absolute;

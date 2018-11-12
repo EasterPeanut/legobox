@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 $grid-gap;
 
   @include for-tablet-landscape-up {
-    max-width: 900px;
+    max-width: $max-width-tablet-landscape-up;
   }
 
 
   @include for-desktop-up {
-    max-width: 1080px;
+    max-width: $max-width-desktop-up;
   }
 }
