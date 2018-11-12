@@ -9,6 +9,12 @@ header {
     }
 
 
+    &.container {
+      @include for-phone-only {
+        padding: 0;
+      }
+    }
+
     .logo {
       align-items: center;
       color: $color-white;
@@ -23,9 +29,14 @@ header {
       text-decoration: none;
       text-transform: uppercase;
 
+      @include for-tablet-portrait-up {
+        margin-right: 0;
+      }
+
+
       &:hover,
       &:focus {
-        background-color: $color-black-transparent;
+        background-color: $color-primary-hover;
         color: $color-white;
       }
     }
@@ -39,6 +50,7 @@ header {
 
 
       li a {
+        border-radius: $border-radius;
         color: $color-white;
         display: block;
         font-family: $font-family-heading;
@@ -47,7 +59,7 @@ header {
 
         &:hover,
         &:focus {
-          background-color: $color-black-transparent;
+          background-color: $color-primary-hover;
           color: $color-white;
         }
       }
@@ -61,6 +73,7 @@ header {
 
       @include for-tablet-portrait-up {
         height: auto;
+        overflow: initial;
       }
     }
 
@@ -88,7 +101,7 @@ header {
 
     &:hover,
     &:focus {
-      background-color: $color-black-transparent;
+      background-color: $color-primary-hover;
     }
 
     &.active {

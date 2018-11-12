@@ -15,12 +15,23 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 a {
   color: $color-link;
   transition: color .075s ease, background-color .1s ease;
 
   &:focus,
-  &:hover {
+  &:hover,
+  &:active {
     color: $color-link-hover;
   }
+}
+
+button,
+.button {
+  font-family: $font-family-ui;
+  text-decoration: none;
 }
