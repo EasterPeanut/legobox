@@ -2,14 +2,18 @@ header {
   background: $color-primary;
 
   nav {
-    padding: 0;
-
     @include for-tablet-portrait-up {
       display: grid;
       grid-template-columns: 10rem auto;
       grid-template-rows: auto auto;
     }
 
+
+    &.container {
+      @include for-phone-only {
+        padding: 0;
+      }
+    }
 
     .logo {
       align-items: center;
