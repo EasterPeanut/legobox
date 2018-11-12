@@ -1,0 +1,25 @@
+.logo {
+  align-items: center;
+  color: $color-white;
+  column-gap: $grid-gap;
+  display: grid;
+  font-family: $font-family-heading;
+  font-weight: 700;
+  grid-template-columns: 3rem auto;
+  grid-template-rows: auto auto;
+  margin-right: 4rem;
+  padding: $spacing-small;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include for-tablet-portrait-up {
+    margin-right: 0;
+  }
+
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+    color: $color-white;
+  }
+}

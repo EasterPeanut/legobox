@@ -1,9 +1,7 @@
 <header>
   <nav class="container">
-    <% link_to "/", :class => "logo" do %>
-      <%= image_tag "legobox-logo.svg", :alt => config.company_name %>
-      <div class="company-name"><%= config.company_name %></div>
-    <% end %>
+    <%= partial("bricks/logo/logo", :locals => { :logo_image_path => "legobox-logo.svg",
+                                                 :show_company_name => true }) %>
     <button id="navToggleButton">
       <div class="bar"></div>
     </button>
