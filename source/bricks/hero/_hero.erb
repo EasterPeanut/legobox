@@ -1,20 +1,20 @@
 <section class="hero <%= variant %>">
-  <%= image_tag image, :alt => image_alt %>
+  <%= image_tag image, alt: image_alt %>
   <% if locals[:color_overlay] %>
     <div class="overlay <%= color_overlay %>"></div>
   <% end %>
   <% if locals[:title] || locals[:text] || (locals[:button_link] && locals[:button_text]) %>
     <div class="container">
       <% if locals[:title] %>
-        <%= content_tag title_tag ||= :h1, :class => "title" do title end %>
+        <%= content_tag title_tag ||= :h1, class: "title" do title end %>
       <% end %>
       <% if locals[:text] %>
         <p class="text"><%= text %></p>
       <% end %>
       <% if locals[:button_link] && locals[:button_text] %>
-        <%= partial("bricks/button/button", :locals => { :to => button_link,
-                                                         :text => button_text,
-                                                         :variant => "white ghost large" }) %>
+        <%= partial("bricks/button/button", locals: { to: button_link,
+                                                      text: button_text,
+                                                      variant: "white ghost large" }) %>
       <% end %>
     </div>
   <% end %>
