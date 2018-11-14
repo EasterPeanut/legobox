@@ -1,22 +1,29 @@
 .button {
+  $button-font-size: 1rem;
+  $button-font-size-large: 1.25rem;
+
   align-items: center;
   border-radius: $border-radius;
   border-style: solid;
   border-width: $border-width-thin;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: $button-font-size;
   margin-bottom: .625rem;
-  padding: .5rem 1.25rem;
+  padding: ($button-font-size / 2) 1.25rem;
 
   &.large {
     border-width: $border-width-thick;
-    font-size: 1.25rem;
-    padding: .625rem 1.875rem;
+    font-size: $button-font-size-large;
+    padding: ($button-font-size / 2) 1.875rem;
 
     .inline-svg {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: $button-font-size-large;
+      height: $button-font-size-large;
     }
+  }
+
+  &.rounded {
+    border-radius: $button-font-size * 2;
   }
 
   $styles: (
@@ -84,8 +91,8 @@
   }
 
   .inline-svg {
-    width: 1rem;
-    height: 1rem;
+    width: $button-font-size;
+    height: $button-font-size;
 
     &.left {
       margin-left: -.375rem;
