@@ -7,15 +7,14 @@ og_images:
   - "/images/example1.jpg"
   - "/images/example2.jpg"
 ---
-<%= partial("bricks/hero/hero", :locals => { :image => "/images/example1.jpg",
-                                             :image_alt => "Example1",
-                                             :variant => "full",
-                                             :color_overlay => "primary",
-                                             :title => current_page.data.title,
-                                             :text => current_page.data.description,
-                                             :button_link => "/images/example1.jpg",
-                                             :button_text => "Contact us" }) %>
-
+<%= partial("bricks/hero/hero", locals: { image: "/images/example1.jpg",
+                                          image_alt: "Example1",
+                                          variant: "full",
+                                          color_overlay: "primary",
+                                          title: current_page.data.title,
+                                          text: current_page.data.description,
+                                          button_link: "/images/example1.jpg",
+                                          button_text: "Contact us" }) %>
 
 <%= link_to(
   "Read Documentation",
