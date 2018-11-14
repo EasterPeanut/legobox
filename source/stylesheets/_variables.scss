@@ -13,6 +13,7 @@ $border-width-thin: 1px;
 $color-black: #000;
 $color-black-transparent: transparentize($color-black, 0.5);
 $color-white: #fff;
+$color-white-hover: darken($color-white, 10%);
 $color-white-transparent: transparentize($color-white, 0.5);
 
 $color-primary: #5888e5;
@@ -22,6 +23,7 @@ $color-secondary: #e480b0;
 $color-secondary-hover: darken($color-secondary, 5%);
 $color-secondary-transparent: transparentize($color-secondary, 0.5);
 $color-tertiary: #f9db01;
+$color-tertiary-hover: darken($color-tertiary, 5%);
 $color-tertiary-transparent: transparentize($color-tertiary, 0.5);
 
 $color-font: #272727;

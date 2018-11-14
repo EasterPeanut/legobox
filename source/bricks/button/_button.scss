@@ -19,91 +19,67 @@
     }
   }
 
-  &.default,
-  &.primary {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    color: $color-white;
+  $styles: (
+    default: (
+      color: $color-primary,
+      hovercolor: $color-primary-hover,
+      textcolor: $color-white
+    ),
+    primary: (
+      color: $color-primary,
+      hovercolor: $color-primary-hover,
+      textcolor: $color-white
+    ),
+    secondary: (
+      color: $color-secondary,
+      hovercolor: $color-secondary-hover,
+      textcolor: $color-white
+    ),
+    tertiary: (
+      color: $color-tertiary,
+      hovercolor: $color-tertiary-hover,
+      textcolor: $color-white
+    ),
+    white: (
+      color: $color-white,
+      hovercolor: $color-white-hover,
+      textcolor: $color-font
+    )
+  );
 
-    &:hover {
-      background-color: $color-primary-hover;
-      border-color: $color-primary-hover;
-    }
+  @each $style, $map in $styles {
+    &.#{$style} {
+      background-color: map-get($map, color);
+      border-color: map-get($map, color);
+      color: map-get($map, textcolor);
 
-    .inline-svg path {
-      fill: $color-white;
-    }
-  }
-
-  &.secondary {
-    background-color: $color-secondary;
-    border-color: $color-secondary;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-secondary-hover;
-      border-color: $color-secondary-hover;
-    }
-
-    .inline-svg path {
-      fill: $color-white;
-    }
-  }
-
-  &.primary.ghost {
-    background-color: transparent;
-    color: $color-primary;
-
-    &:hover {
-      background-color: $color-primary;
-      border-color: $color-primary;
-      color: $color-white;
+      &:hover {
+        background-color: map-get($map, hovercolor);
+        border-color: map-get($map, hovercolor);
+      }
 
       .inline-svg path {
-        fill: $color-white;
+        fill: map-get($map, textcolor);
       }
     }
 
-    .inline-svg path {
-      fill: $color-primary;
-    }
-  }
+    &.#{$style}.ghost {
+      background-color: transparent;
+      color: map-get($map, color);
 
-  &.secondary.ghost {
-    background-color: transparent;
-    color: $color-secondary;
+      &:hover {
+        background-color: map-get($map, color);
+        border-color: map-get($map, color);
+        color: map-get($map, textcolor);
 
-    &:hover {
-      background-color: $color-secondary;
-      border-color: $color-secondary;
-      color: $color-white;
+        .inline-svg path {
+          fill: map-get($map, textcolor);
+        }
+      }
 
       .inline-svg path {
-        fill: $color-white;
+        fill: map-get($map, color);
       }
-    }
-
-    .inline-svg path {
-      fill: $color-secondary;
-    }
-  }
-
-  &.white.ghost {
-    background-color: transparent;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-white;
-      border-color: $color-white;
-      color: $color-font;
-
-      .inline-svg path {
-        fill: $color-font;
-      }
-    }
-
-    .inline-svg path {
-      fill: $color-white;
     }
   }
 
