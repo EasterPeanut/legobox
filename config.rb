@@ -12,11 +12,12 @@ config[:company_phone_number] = "+31 65 777 5633"
 config[:company_placename] = "Assen"
 config[:company_postal_code] = "9406 GS"
 config[:meta_csp_settings] = " img-src 'self' https://*; child-src 'none';"
-config[:meta_geo_placename] = config[:company_placename] + ", " + config[:company_country]
+config[:meta_geo_placename] = config[:company_placename] + ", " +
+                              config[:company_country]
 config[:meta_geo_position] = config[:company_lat] + ";" + config[:company_long]
 config[:meta_geo_region] = "NL-DR"
 config[:root_locale] = :nl
-config[:locales] = [:nl, :en]
+config[:locales] = %i[nl en]
 config[:sm_fb_app_id] = "123456789"
 config[:sm_twitter_site_account] = "@legobox"
 config[:sm_twitter_user_account] = "@legoman"
@@ -29,7 +30,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 activate :directory_indexes
-activate :i18n, mount_at_root: config.root_locale, :langs => config.locales
+activate :i18n, mount_at_root: config.root_locale, langs: config.locales
 activate :livereload
 activate :sprockets
 # activate :search
@@ -64,22 +65,23 @@ helpers do
   def robots(page = current_page)
     return "noindex,nofollow" if config.staging
     return page.data.robots if page.data.robots
+
     "noydir,noodp,index,follow"
   end
 
   # Get full locale (eg. nl_NL)
   def full_locale(lang = I18n.locale)
     case lang
-      when :en
-        "en_US"
-      else
-        "#{lang.downcase}_#{lang.upcase}"
+    when :en
+      "en_US"
+    else
+      "#{lang.downcase}_#{lang.upcase}"
     end
   end
 
   # Get host with port
   def host_with_port
-    [config.host, optional_port].compact.join(':')
+    [config.host, optional_port].compact.join(":")
   end
 
   def optional_port
@@ -118,5 +120,5 @@ configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
 
-  activate :asset_host, :host => "//legobox.io"
+  activate :asset_host, host: "//legobox.io"
 end
