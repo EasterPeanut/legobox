@@ -1,11 +1,11 @@
 // ---- Fonts -----------------------------------
 $font-family: "PT Serif", -apple-system, BlinkMacSystemFont, system-ui, "Bitstream Charter", "Sylfaen", "Times", "Times New Roman", "Century Schoolbook L", "URW Palladio L", "URW Bookman L", "Georgia", serif;
-$font-family-heading: "Roboto Condensed", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+$font-family-heading: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 $font-family-ui: $font-family-heading;
 $font-size: 16px;
 
 // ---- Borders ---------------------------------
-$border-radius: 2px;
+$border-radius: 3px;
 $border-width-thick: 2px;
 $border-width-thin: 1px;
 
@@ -31,10 +31,15 @@ $color-link: $color-secondary;
 $color-link-hover: darken($color-link, 10%);
 $color-selection: transparentize($color-tertiary, 0.2);
 
+$shadow: 0.125rem 0.125rem 0.5rem darken(transparentize($color-primary, 0.75), 25%);
+
 // ---- Grid ------------------------------------
-$grid-gap: 0.75rem;
+$grid-gap: 1rem;
 $max-width-desktop-up: 1080px;
 $max-width-tablet-landscape-up: 900px;
+$spacing: $grid-gap;
+$spacing-large: 3rem;
+$spacing-medium: 2rem;
 $spacing-small: 0.75rem;
 
 // ---- Breakpoints -----------------------------

@@ -11,7 +11,11 @@ config[:company_name] = "Legobox"
 config[:company_phone_number] = "+31 65 777 5633"
 config[:company_placename] = "Assen"
 config[:company_postal_code] = "9406 GS"
-config[:meta_csp_settings] = " img-src 'self' https://*; child-src 'none';"
+config[:meta_csp_settings] = "default-src 'self'; " \
+                             "img-src 'self'; " \
+                             "child-src 'none'; " \
+                             "style-src 'self' https://fonts.googleapis.com; " \
+                             "font-src 'self' https://fonts.gstatic.com;"
 config[:meta_geo_placename] = config[:company_placename] + ", " +
                               config[:company_country]
 config[:meta_geo_position] = config[:company_lat] + ";" + config[:company_long]
