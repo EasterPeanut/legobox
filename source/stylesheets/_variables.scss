@@ -31,7 +31,7 @@ $color-link: $color-secondary;
 $color-link-hover: darken($color-link, 10%);
 $color-selection: transparentize($color-tertiary, 0.2);
 
-$shadow: 0.125rem 0.125rem 0.5rem darken(transparentize($color-primary, 0.75), 25%);
+$shadow: 0.125rem 0.125rem 0.125rem darken(transparentize($color-primary, 0.85), 25%);
 
 // ---- Grid ------------------------------------
 $grid-gap: 1rem;

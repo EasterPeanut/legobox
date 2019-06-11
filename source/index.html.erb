@@ -4,8 +4,10 @@ description: To set up a Middleman website. This must be under 500 characters.
 abstract: Summary of one sentence and this must be under 100 characters.
 og_content_type: ["product", "blog", "website", "book", "movie", ... ]
 og_images:
+  - "/images/bricks.gif"
   - "/images/example1.jpg"
   - "/images/example2.jpg"
+  - "/images/example3.jpg"
 ---
 <%= partial("bricks/hero/hero", locals: { image: "/images/example1.jpg",
                                           image_alt: "Example1",
@@ -13,7 +15,7 @@ og_images:
                                           color_overlay: "gradient",
                                           title: current_page.data.title,
                                           text: current_page.data.description,
-                                          button_link: "/images/example1.jpg",
+                                          button_link: "/images/bricks.gif",
                                           button_text: "Contact us" }) %>
 
 <%= link_to(
