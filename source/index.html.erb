@@ -8,15 +8,18 @@ og_images:
   - "/images/example1.jpg"
   - "/images/example2.jpg"
   - "/images/example3.jpg"
+products: products
 ---
-<%= partial("bricks/hero/hero", locals: { image: "/images/example1.jpg",
-                                          image_alt: "Example1",
+<%= partial("bricks/hero/hero", locals: { image: "/images/bricks.gif",
+                                          image_alt: "Bricks",
                                           variant: "full",
                                           color_overlay: "gradient",
                                           title: current_page.data.title,
                                           text: current_page.data.description,
                                           button_link: "/images/bricks.gif",
                                           button_text: "Contact us" }) %>
+
+<%= partial("bricks/product/grid/grid", locals: { title: "Our products" }) %>
 
 <%= link_to(
   "Read Documentation",

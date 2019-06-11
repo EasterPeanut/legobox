@@ -16,6 +16,15 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: $spacing-medium;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
 a {
   color: $color-link;
   transition: color .075s ease, background-color .1s ease;
