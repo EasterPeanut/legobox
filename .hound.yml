@@ -1,0 +1,5 @@
+erblint:
+  enabled: true
+
+ruby:
+  config_file: .rubocop.yml
