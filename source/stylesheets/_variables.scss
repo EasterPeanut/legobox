@@ -34,9 +34,11 @@ $color-selection: transparentize($color-tertiary, 0.2);
 $shadow: 0.125rem 0.125rem 0.125rem darken(transparentize($color-primary, 0.85), 25%);
 
 // ---- Grid ------------------------------------
-$grid-gap: 1rem;
+$grid-gap: 1.25rem;
+$grid-gap-for-tablet-portrait-down: 2rem;
 $max-width-desktop-up: 1080px;
 $max-width-tablet-landscape-up: 900px;
+$max-width: 24rem;
 $spacing: $grid-gap;
 $spacing-large: 3rem;
 $spacing-medium: 2rem;
