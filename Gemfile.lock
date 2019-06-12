@@ -114,6 +114,11 @@ GEM
     ruby-ll (2.1.2)
       ansi
       ast
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.0.1)
       ffi (~> 1.9)
       rake
@@ -141,8 +146,9 @@ DEPENDENCIES
   middleman-sprockets (~> 4.1.1)
   middleman-syntax (~> 3.0.0)
   oga (~> 2.15)
+  sass (~> 3.7)
   tzinfo-data
   wdm (~> 0.1)
 
 BUNDLED WITH
-   1.17.1
+   1.17.2
