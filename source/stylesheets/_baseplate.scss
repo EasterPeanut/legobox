@@ -4,23 +4,19 @@ body {
   background-color: $color-white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-heading;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 ::selection {
   background: $color-selection;
 }
 
-.row {
-  width: 100%;
+section {
+  margin-bottom: $spacing-large;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 $grid-gap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gap;
+  padding-right: $grid-gap;
 
   @include for-tablet-landscape-up {
     max-width: $max-width-tablet-landscape-up;

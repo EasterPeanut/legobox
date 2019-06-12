@@ -1,0 +1,10 @@
+<% link_to product.link, class: "tile" do %>
+  <article>
+    <%= image_tag product.image.src, alt: product.image.alt || product.name %>
+    <div class="text">
+      <h3><%= product.name %></h3>
+      <p><%= product.summary %></p>
+    </div>
+    <span>Read more →</span>
+  </article>
+<% end %>

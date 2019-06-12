@@ -1,6 +1,8 @@
 .button {
   $button-font-size: 1rem;
+  $button-icon-size: 1.25rem;
   $button-font-size-large: 1.25rem;
+  $button-icon-size-large: 1.75rem;
 
   align-items: center;
   border-radius: $border-radius;
@@ -14,11 +16,11 @@
   &.large {
     border-width: $border-width-thick;
     font-size: $button-font-size-large;
-    padding: ($button-font-size / 2) 1.875rem;
+    padding: ($button-font-size / 4 * 3) 1.875rem;
 
     .inline-svg {
-      width: $button-font-size-large;
-      height: $button-font-size-large;
+      width: $button-icon-size-large;
+      height: $button-icon-size-large;
     }
   }
 
@@ -91,8 +93,8 @@
   }
 
   .inline-svg {
-    width: $button-font-size;
-    height: $button-font-size;
+    width: $button-icon-size;
+    height: $button-icon-size;
 
     &.left {
       margin-left: -.375rem;

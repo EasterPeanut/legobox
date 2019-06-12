@@ -1,40 +1,47 @@
 // ---- Fonts -----------------------------------
 $font-family: "PT Serif", -apple-system, BlinkMacSystemFont, system-ui, "Bitstream Charter", "Sylfaen", "Times", "Times New Roman", "Century Schoolbook L", "URW Palladio L", "URW Bookman L", "Georgia", serif;
-$font-family-heading: "Roboto Condensed", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+$font-family-heading: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 $font-family-ui: $font-family-heading;
 $font-size: 16px;
 
 // ---- Borders ---------------------------------
-$border-radius: 2px;
+$border-radius: 3px;
 $border-width-thick: 2px;
 $border-width-thin: 1px;
 
 // ---- Colors ----------------------------------
 $color-black: #000;
-$color-black-transparent: transparentize($color-black, 0.5);
+$color-black-transparent: transparentize($color-black, 0.2);
 $color-white: #fff;
 $color-white-hover: darken($color-white, 10%);
-$color-white-transparent: transparentize($color-white, 0.5);
+$color-white-transparent: transparentize($color-white, 0.2);
 
 $color-primary: #5888e5;
 $color-primary-hover: darken($color-primary, 5%);
-$color-primary-transparent: transparentize($color-primary, 0.5);
+$color-primary-transparent: transparentize($color-primary, 0.2);
 $color-secondary: #e480b0;
 $color-secondary-hover: darken($color-secondary, 5%);
-$color-secondary-transparent: transparentize($color-secondary, 0.5);
+$color-secondary-transparent: transparentize($color-secondary, 0.2);
 $color-tertiary: #f9db01;
 $color-tertiary-hover: darken($color-tertiary, 5%);
-$color-tertiary-transparent: transparentize($color-tertiary, 0.5);
+$color-tertiary-transparent: transparentize($color-tertiary, 0.2);
 
 $color-font: #272727;
 $color-link: $color-secondary;
 $color-link-hover: darken($color-link, 10%);
 $color-selection: transparentize($color-tertiary, 0.2);
 
+$shadow: 0.125rem 0.125rem 0.125rem darken(transparentize($color-primary, 0.85), 25%);
+
 // ---- Grid ------------------------------------
-$grid-gap: 0.75rem;
+$grid-gap: 1.25rem;
+$grid-gap-for-tablet-portrait-down: 2rem;
 $max-width-desktop-up: 1080px;
 $max-width-tablet-landscape-up: 900px;
+$max-width: 24rem;
+$spacing: $grid-gap;
+$spacing-large: 3rem;
+$spacing-medium: 2rem;
 $spacing-small: 0.75rem;
 
 // ---- Breakpoints -----------------------------

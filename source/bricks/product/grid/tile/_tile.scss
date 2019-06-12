@@ -1,0 +1,29 @@
+.tile {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: transform .18s ease;
+
+  &:hover {
+    transform: scale(1.04);
+    transition: transform .12s ease;
+  }
+
+  article {
+    height: 100%;
+  }
+
+  .text {
+    color: $color-font;
+    padding: 1.5rem 1.75rem 3.5rem;
+  }
+
+  span {
+    color: $color-link;
+    position: absolute;
+    bottom: 1.75rem;
+    left: 1.75rem;
+  }
+}

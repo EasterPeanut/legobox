@@ -8,15 +8,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
-  font-weight: 700;
-}
-
-h1, h2, h3 {
-  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 110%;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: $spacing-medium;
+}
+
+h3 {
+  font-size: 1.125rem;
 }
 
 a {
@@ -33,5 +39,6 @@ a {
 button,
 .button {
   font-family: $font-family-ui;
+  font-weight: 400;
   text-decoration: none;
 }

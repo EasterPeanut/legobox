@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Bricks",
+    "link": "/products/bricks",
+    "summary": "Bricks in all kinds of sizes and colors. From 1x1 to 2x8. From red to medium lilac.",
+    "content": "The most common and most known Lego piece in history: the brick. Simple yet effective.",
+    "image": {
+      "src": "/images/example1.jpg",
+      "alt": "A turtle made out of Lego"
+    }
+  },
+  {
+    "name": "Brick separators",
+    "link": "/products/brick-separators",
+    "summary": "Easily disconnect your bricks with a brick separator. ",
+    "content": "Whenever you're tired of tidying up after your nephew played with your Lego collection while consuming a lollypop, leaving the damn thing everywhere except in his mouth.",
+    "image": {
+      "src": "/images/example2.jpg",
+      "alt": "A fox and a hare made out of Lego"
+    }
+  },
+  {
+    "name": "Figure heads",
+    "link": "/products/figure-heads",
+    "summary": "A Lego figure has many faces.",
+    "content": "The Faceless Lego figures cure the faces of the dead who come to die in their sanctuary, hanging these skins in deep vaults below the temple as masks, which they use to disguise themselves during assassination contracts",
+    "image": {
+      "src": "/images/example3.jpg",
+      "alt": "A leopard made out of Lego"
+    }
+  }
+]

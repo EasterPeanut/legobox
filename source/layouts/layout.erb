@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title><%= config.company_name + " - " + current_page.data.title %></title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';<%= config.meta_csp_settings %>">
+    <meta http-equiv="Content-Security-Policy" content="<%= config.meta_csp_settings %>">
     <base href="<%= config.host %>">
     <%= partial "bricks/meta_geo_position" %>
     <meta name="description" content="<%= current_page.data.description %>">
@@ -13,12 +13,14 @@
     <meta name="robots" content="<%= robots() %>">
     <%= partial "bricks/meta_open_graph" %>
     <%= partial "bricks/meta_favicon" %>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Heebo:400,800" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
     <%= partial "bricks/header/header" %>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
   <%= javascript_include_tag "site" %>
 </html>
