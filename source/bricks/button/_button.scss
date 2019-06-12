@@ -29,27 +29,27 @@
   }
 
   $styles: (
-    default: (
+    "default": (
       color: $color-primary,
       hovercolor: $color-primary-hover,
       textcolor: $color-white
     ),
-    primary: (
+    "primary": (
       color: $color-primary,
       hovercolor: $color-primary-hover,
       textcolor: $color-white
     ),
-    secondary: (
+    "secondary": (
       color: $color-secondary,
       hovercolor: $color-secondary-hover,
       textcolor: $color-white
     ),
-    tertiary: (
+    "tertiary": (
       color: $color-tertiary,
       hovercolor: $color-tertiary-hover,
       textcolor: $color-white
     ),
-    white: (
+    "white": (
       color: $color-white,
       hovercolor: $color-white-hover,
       textcolor: $color-font
