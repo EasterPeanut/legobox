@@ -1,5 +1,8 @@
 erblint:
   enabled: true
 
+scss:
+  config_file: .scss-lint.yml
+
 ruby:
   config_file: .rubocop.yml

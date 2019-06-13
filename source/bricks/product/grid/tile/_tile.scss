@@ -8,9 +8,9 @@
   }
 
   article {
-    height: 100%;
     border-radius: $border-radius;
     box-shadow: $shadow;
+    height: 100%;
     overflow: hidden;
   }
 
@@ -21,9 +21,9 @@
   }
 
   span {
-    color: $color-link;
-    position: absolute;
     bottom: 1.75rem;
+    color: $color-link;
     left: 1.75rem;
+    position: absolute;
   }
 }

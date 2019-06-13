@@ -34,8 +34,8 @@
 
     img {
       @include for-tablet-portrait-up {
-        object-fit: cover;
         height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -47,9 +47,9 @@
   }
 
   span {
-    color: $color-link;
-    position: absolute;
     bottom: 1.75rem;
+    color: $color-link;
     left: 1.75rem;
+    position: absolute;
   }
 }
