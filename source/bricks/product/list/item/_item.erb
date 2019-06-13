@@ -1,0 +1,12 @@
+<% link_to product.link, class: "item" do %>
+  <article>
+    <div class="image">
+      <%= image_tag product.image.src, alt: product.image.alt || product.name %>
+    </div>
+    <div class="text">
+      <h3><%= product.name %></h3>
+      <p><%= product.summary %></p>
+      <span>Read more →</span>
+    </div>
+  </article>
+<% end %>
