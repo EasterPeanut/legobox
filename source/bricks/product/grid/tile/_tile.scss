@@ -1,8 +1,4 @@
-.tile {
-  border-radius: $border-radius;
-  box-shadow: $shadow;
-  overflow: hidden;
-  position: relative;
+.products .grid .tile {
   text-decoration: none;
   transition: transform .18s ease;
 
@@ -12,18 +8,22 @@
   }
 
   article {
+    border-radius: $border-radius;
+    box-shadow: $shadow;
     height: 100%;
+    overflow: hidden;
   }
 
   .text {
     color: $color-font;
     padding: 1.5rem 1.75rem 3.5rem;
+    position: relative;
   }
 
   span {
-    color: $color-link;
-    position: absolute;
     bottom: 1.75rem;
+    color: $color-link;
     left: 1.75rem;
+    position: absolute;
   }
 }

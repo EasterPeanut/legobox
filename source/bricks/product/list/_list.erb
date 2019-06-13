@@ -1,8 +1,8 @@
 <section class="products container">
   <h2><%= title %></h2>
-  <div class="grid">
+  <div class="list">
     <% data.products.each do |product| %>
-      <%= partial("bricks/product/grid/tile/tile", locals: { product: product }) %>
+      <%= partial("bricks/product/list/item/item", locals: { product: product }) %>
     <% end %>
   </div>
 </section>

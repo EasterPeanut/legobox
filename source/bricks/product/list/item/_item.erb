@@ -1,6 +1,8 @@
-<% link_to product.link, class: "tile" do %>
+<% link_to product.link, class: "item" do %>
   <article>
-    <%= image_tag product.image.src, alt: product.image.alt || product.name %>
+    <div class="image">
+      <%= image_tag product.image.src, alt: product.image.alt || product.name %>
+    </div>
     <div class="text">
       <h3><%= product.name %></h3>
       <p><%= product.summary %></p>
