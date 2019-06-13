@@ -1,19 +1,13 @@
-.product-list {
-  h2 {
-    text-align: center;
-  }
+.products .grid {
+  display: grid;
+  grid-gap: $grid-gap-for-tablet-portrait-down;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: $max-width;
 
-  .grid {
-    display: grid;
-    grid-gap: $grid-gap-for-tablet-portrait-down;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    max-width: $max-width;
-
-    @include for-tablet-landscape-up {
-      grid-gap: $grid-gap;
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width: initial;
-    }
+  @include for-tablet-landscape-up {
+    grid-gap: $grid-gap;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: initial;
   }
 }
