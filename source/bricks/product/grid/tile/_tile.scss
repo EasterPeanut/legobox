@@ -12,12 +12,12 @@
     box-shadow: $shadow;
     height: 100%;
     overflow: hidden;
+    position: relative;
   }
 
   .text {
     color: $color-font;
     padding: 1.5rem 1.75rem 3.5rem;
-    position: relative;
   }
 
   span {
