@@ -2,7 +2,7 @@
   {
     "name": "Bricks",
     "link": "/products/bricks",
-    "summary": "Bricks in all kinds of sizes and colors. From 1x1 to 2x8. From red to medium lilac. The summary of a product must be under 255 characters.",
+    "description": "Bricks in all kinds of sizes and colors. From 1x1 to 2x8. From red to medium lilac. The description of a product must be under 255 characters.",
     "content": "The most common and most known Lego piece in history: the brick. Simple yet effective.",
     "image": {
       "src": "/images/example1.jpg",
@@ -12,7 +12,7 @@
   {
     "name": "Brick separators",
     "link": "/products/brick-separators",
-    "summary": "Easily disconnect your bricks with a brick separator. The summary of a product must be under 255 characters.",
+    "description": "Easily disconnect your bricks with a brick separator. The description of a product must be under 255 characters.",
     "content": "Whenever you're tired of tidying up after your nephew played with your Lego collection while consuming a lollypop, leaving the damn thing everywhere except in his mouth.",
     "image": {
       "src": "/images/example2.jpg",
@@ -22,7 +22,7 @@
   {
     "name": "Figure heads",
     "link": "/products/figure-heads",
-    "summary": "A Lego figure has many faces. The summary of a product must be under 255 characters.",
+    "description": "A Lego figure has many faces. The description of a product must be under 255 characters.",
     "content": "The Faceless Lego figures cure the faces of the dead who come to die in their sanctuary, hanging these skins in deep vaults below the temple as masks, which they use to disguise themselves during assassination contracts",
     "image": {
       "src": "/images/example3.jpg",
