@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Agile",
+    "description": "The content of a static website can be modified as easily as the content of an average database-driven website, thanks to an independent management environment which provides continuos deployment.",
+    "image": {
+      "src": "/images/feature1.svg",
+      "alt": "Take off"
+    }
+  },
+  {
+    "title": "Rock-solid... 🤔",
+    "description": "A static website does not have a database, which means one thing less to worry about in terms of security.",
+    "image": {
+      "src": "/images/feature2.svg",
+      "alt": "Mountain scattering"
+    }
+  },
+  {
+    "title": "Superfast",
+    "description": "Pages are built server-side which results in a performance benefit because zero servers are involved whenever page requests are made.",
+    "image": {
+      "src": "/images/feature3.svg",
+      "alt": "Flying high"
+    }
+  }
+]

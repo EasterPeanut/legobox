@@ -20,7 +20,8 @@ products: products
                                           button_text: "Contact us" }) %>
 
 <%= partial("bricks/product/grid/grid", locals: { title: "Our products (grid)" }) %>
-<%= partial("bricks/product/list/list", locals: { title: "Our products (list)" }) %>
+<% partial("bricks/product/list/list", locals: { title: "Our products (list)" }) %>
+<%= partial("bricks/featured/grid/grid", locals: { title: "What we are known for" }) %>
 
 <%= link_to(
   "Read Documentation",
