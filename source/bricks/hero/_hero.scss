@@ -83,6 +83,8 @@
   }
 
   .container {
+    max-width: $max-width * 2;
+
     > *:last-child {
       margin-bottom: 0;
     }
