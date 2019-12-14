@@ -5,99 +5,73 @@
   text-align: center;
 
   &.full {
-    height: 24rem;
+    .with-image {
+      height: 24rem;
 
-    @include for-tablet-portrait-up {
-      height: 30rem;
-    }
+      @include for-tablet-portrait-up {
+        height: 30rem;
+      }
 
 
-    @include for-large-desktop-up {
-      height: 40rem;
+      @include for-large-desktop-up {
+        height: 40rem;
+      }
     }
   }
 
   &.narrow {
-    height: 18rem;
-
     @include for-tablet-landscape-up {
-      height: 22.5rem;
       max-width: $max-width-tablet-landscape-up;
     }
 
 
     @include for-desktop-up {
-      height: 30rem;
       max-width: $max-width-desktop-up;
+    }
+
+
+    .with-image {
+      height: 18rem;
+
+      @include for-tablet-landscape-up {
+        height: 22.5rem;
+      }
+
+
+      @include for-desktop-up {
+        height: 30rem;
+      }
     }
   }
 
   &.wide {
-    height: 18rem;
-
     @include for-tablet-landscape-up {
-      height: 22.5rem;
       max-width: $max-width-desktop-up;
     }
 
 
     @include for-desktop-up {
-      height: 30rem;
       max-width: $max-width-desktop-up + 216px;
     }
-  }
 
-  img {
-    height: inherit;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-  }
 
-  .overlay {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    .with-image {
+      height: 18rem;
 
-    &.primary {
-      background-color: $color-primary-transparent;
+      @include for-tablet-landscape-up {
+        height: 22.5rem;
+      }
+
+
+      @include for-desktop-up {
+        height: 30rem;
+      }
     }
-
-    &.secondary {
-      background-color: $color-secondary-transparent;
-    }
-
-    &.tertiary {
-      background-color: $color-tertiary-transparent;
-    }
-
-    &.gradient {
-      background-image: linear-gradient(141deg, $color-tertiary-transparent 0%, $color-secondary-transparent 50%, $color-primary-transparent 75%);
-    }
-
-    &.black {
-      background-color: $color-black-transparent;
-    }
-
-    &.white {
-      background-color: $color-white-transparent;
-    }
-  }
-
-  .container {
-    max-width: $max-width;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   .title,
   .text {
     color: $color-white;
-    position: relative;
   }
 
   .title {
@@ -106,5 +80,94 @@
 
   .text {
     margin-bottom: $spacing-medium;
+  }
+
+  .container {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .with-image {
+    img {
+      height: inherit;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+    }
+
+    .overlay {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      &.primary {
+        background-color: $color-primary-transparent;
+      }
+
+      &.secondary {
+        background-color: $color-secondary-transparent;
+      }
+
+      &.tertiary {
+        background-color: $color-tertiary-transparent;
+      }
+
+      &.gradient {
+        background-image: linear-gradient(141deg, $color-tertiary-transparent 0%, $color-secondary-transparent 50%, $color-primary-transparent 75%);
+      }
+
+      &.black {
+        background-color: $color-black-transparent;
+      }
+
+      &.white {
+        background-color: $color-white-transparent;
+      }
+    }
+
+    .container {
+      max-width: $max-width;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .title,
+    .text {
+      position: relative;
+    }
+  }
+
+  .background {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    &.primary {
+      background-color: $color-primary;
+    }
+
+    &.secondary {
+      background-color: $color-secondary;
+    }
+
+    &.tertiary {
+      background-color: $color-tertiary;
+    }
+
+    &.gradient {
+      background-image: linear-gradient(141deg, $color-tertiary 0%, $color-secondary 50%, $color-primary 75%);
+    }
+
+    &.black {
+      background-color: $color-black;
+    }
+
+    &.white {
+      background-color: $color-white;
+    }
   }
 }
