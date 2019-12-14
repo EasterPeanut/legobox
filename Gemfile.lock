@@ -92,7 +92,7 @@ GEM
       middleman-core (>= 3.2)
       rouge (~> 2.0)
     minitest (5.11.3)
-    oga (2.15)
+    oga (3.0)
       ast
       ruby-ll (~> 2.1)
     padrino-helpers (0.13.3.4)
@@ -145,7 +145,7 @@ DEPENDENCIES
   middleman-minify-html (~> 3.4.1)
   middleman-sprockets (~> 4.1.1)
   middleman-syntax (~> 3.0.0)
-  oga (~> 2.15)
+  oga (~> 3.0)
   sass (~> 3.7)
   tzinfo-data
   wdm (~> 0.1)
