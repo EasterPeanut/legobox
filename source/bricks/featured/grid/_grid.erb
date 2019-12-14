@@ -1,0 +1,8 @@
+<section class="featured container">
+  <h2><%= title %></h2>
+  <div class="grid">
+    <% data.featured.each do |featured| %>
+      <%= partial("bricks/featured/grid/tile/tile", locals: { featured: featured }) %>
+    <% end %>
+  </div>
+</section>
