@@ -21,6 +21,10 @@ products: products
 
 <%= partial("bricks/product/grid/grid", locals: { title: "Our products" }) %>
 <% partial("bricks/product/list/list", locals: { title: "Our products" }) %>
+<%= partial("bricks/hero/hero", locals: { variant: "wide",
+                                          color_background: "gradient",
+                                          title_tag: :h2,
+                                          title: "Pretty much any text can go here, preferably some text on two lines because that will balance this page." }) %>
 <%= partial("bricks/featured/grid/grid", locals: { title: "The benefits of going static" }) %>
 
 <%= link_to(
