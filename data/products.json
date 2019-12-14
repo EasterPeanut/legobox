@@ -2,31 +2,31 @@
   {
     "name": "Bricks",
     "link": "/products/bricks",
-    "description": "Bricks in all kinds of sizes and colors. From 1x1 to 2x8. From red to medium lilac. The description of a product must be under 255 characters.",
-    "content": "The most common and most known Lego piece in history: the brick. Simple yet effective.",
+    "description": "Build your own Set with the use of Bricks. Bricks are represent the visual element on a page, like a button or a list of news items or the news items themselves. Choose which Bricks you deem useful from Legobox's Brick collection.",
+    "content": "Build your own Set with the use of Bricks. Bricks are snippets of code that represent a visual element on a page, like a button or a list of news items or the news items themselves. Below you will find all Legobox's Bricks.",
     "image": {
       "src": "/images/example1.jpg",
-      "alt": "A turtle made out of Lego"
+      "alt": "Bucket of Bricks"
     }
   },
   {
-    "name": "Brick separators",
-    "link": "/products/brick-separators",
-    "description": "Easily disconnect your bricks with a brick separator. The description of a product must be under 255 characters.",
-    "content": "Whenever you're tired of tidying up after your nephew played with your Lego collection while consuming a lollypop, leaving the damn thing everywhere except in his mouth.",
+    "name": "Sets",
+    "link": "/products/sets",
+    "description": "Sets determine the layout of your selection of Bricks. By telling the Set which Brick goes where, you are building the skeleton of a page. Legobox provides the toolkit to assemble Sets the way you like.",
+    "content": "Sets determine the layout of your selection of Bricks. Combined with the right data, a Set can be used to create pages. Legobox has some predefined Sets to choose from listed below.",
     "image": {
       "src": "/images/example2.jpg",
-      "alt": "A fox and a hare made out of Lego"
+      "alt": "Stack of Sets"
     }
   },
   {
-    "name": "Figure heads",
-    "link": "/products/figure-heads",
-    "description": "A Lego figure has many faces. The description of a product must be under 255 characters.",
-    "content": "The Faceless Lego figures cure the faces of the dead who come to die in their sanctuary, hanging these skins in deep vaults below the temple as masks, which they use to disguise themselves during assassination contracts",
+    "name": "Themes",
+    "link": "/products/themes",
+    "description": "Legobox comes with three themes: 'Less == More', 'More OR Less' and 'FreeStyle'; and three different colors to be changed to whatever you like: a primary, secondary and tertiary color.",
+    "content": "Legobox comes with three themes: 'Less == More', 'More OR Less' and 'FreeStyle'; and three different colors to be changed to whatever you like: a primary, secondary and tertiary color.",
     "image": {
       "src": "/images/example3.jpg",
-      "alt": "A leopard made out of Lego"
+      "alt": "Themes"
     }
   }
 ]

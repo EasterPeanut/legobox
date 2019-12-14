@@ -1,7 +1,7 @@
 [
   {
     "title": "Agile",
-    "description": "The content of a static website can be modified as easily as the content of an average database-driven website, thanks to an independent management environment which provides continuos deployment.",
+    "description": "The content of a static website can be modified easily, thanks to an independent management environment which provides continuos deployment.",
     "image": {
       "src": "/images/feature1.svg",
       "alt": "Take off"
