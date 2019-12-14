@@ -1,4 +1,6 @@
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   text-align: center;
 
@@ -17,7 +19,6 @@
 
   &.narrow {
     height: 18rem;
-    margin: 0 auto;
 
     @include for-tablet-landscape-up {
       height: 22.5rem;
@@ -33,7 +34,6 @@
 
   &.wide {
     height: 18rem;
-    margin: 0 auto;
 
     @include for-tablet-landscape-up {
       height: 22.5rem;
