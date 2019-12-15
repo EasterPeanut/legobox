@@ -1,14 +1,14 @@
 # Global settings
 
-config[:color_primary] = "#5888e5"
+config[:color_primary] = "#7042c1"
 config[:color_secondary] = "#e480b0"
 config[:company_address] = "Gouwe 102"
 config[:company_country] = "Nederland"
-config[:company_email] = "info@legobox.io"
+config[:company_email] = "info@companyemail.io"
 config[:company_lat] = "53.000986"
 config[:company_long] = "6.538577"
 config[:company_name] = "Legobox"
-config[:company_phone_number] = "+31 65 777 5633"
+config[:company_phone_number] = "+31 76 671 167"
 config[:company_placename] = "Assen"
 config[:company_postal_code] = "9406 GS"
 config[:meta_csp_settings] = "default-src 'self'; " \
@@ -23,8 +23,8 @@ config[:meta_geo_region] = "NL-DR"
 config[:root_locale] = :nl
 config[:locales] = %i[nl en]
 config[:sm_fb_app_id] = "123456789"
-config[:sm_twitter_site_account] = "@legobox"
-config[:sm_twitter_user_account] = "@legoman"
+config[:sm_twitter_site_account] = "@company"
+config[:sm_twitter_user_account] = "@employee"
 config[:staging] = true
 
 # Activate and configure extensions
@@ -114,7 +114,7 @@ end
 configure :build do
   # Used for generating absolute URLs
   config[:protocol] = "https://"
-  config[:host] = "legobox.io"
+  config[:host] = "unknown.io"
   config[:port] = 80
 
   activate :minify_css
@@ -124,5 +124,5 @@ configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
 
-  activate :asset_host, host: "//legobox.io"
+  activate :asset_host, host: "//unknown.io"
 end
