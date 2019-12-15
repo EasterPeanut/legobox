@@ -1,9 +1,9 @@
 <% link_to to, class: "button " + variant ||= "default" do %>
   <% if locals[:icon_left] %>
-    <%= inline_svg icon_left, class: "inline-svg left" %>
+    <svg class="icon left icon-<%= icon_left %>"><use xlink:href="#icon-<%= icon_left %>"></use></svg>
   <% end %>
   <%= text %>
   <% if locals[:icon_right] %>
-    <%= inline_svg icon_right, class: "inline-svg right" %>
+    <svg class="icon right icon-<%= icon_right %>"><use xlink:href="#icon-<%= icon_right %>"></use></svg>
   <% end %>
 <% end %>
