@@ -1,8 +1,6 @@
 .button {
   $button-font-size: 1rem;
-  $button-icon-size: 1.25rem;
   $button-font-size-large: 1.25rem;
-  $button-icon-size-large: 1.75rem;
 
   align-items: center;
   border-radius: $border-radius;
@@ -17,11 +15,6 @@
     border-width: $border-width-thick;
     font-size: $button-font-size-large;
     padding: ($button-font-size / 4 * 3) 1.875rem;
-
-    .inline-svg {
-      width: $button-icon-size-large;
-      height: $button-icon-size-large;
-    }
   }
 
   &.rounded {
@@ -66,10 +59,6 @@
         background-color: map-get($map, hovercolor);
         border-color: map-get($map, hovercolor);
       }
-
-      .inline-svg path {
-        fill: map-get($map, textcolor);
-      }
     }
 
     &.#{$style}.ghost {
@@ -80,22 +69,11 @@
         background-color: map-get($map, color);
         border-color: map-get($map, color);
         color: map-get($map, textcolor);
-
-        .inline-svg path {
-          fill: map-get($map, textcolor);
-        }
-      }
-
-      .inline-svg path {
-        fill: map-get($map, color);
       }
     }
   }
 
-  .inline-svg {
-    width: $button-icon-size;
-    height: $button-icon-size;
-
+  .icon {
     &.left {
       margin-left: -.375rem;
       margin-right: .5rem;
